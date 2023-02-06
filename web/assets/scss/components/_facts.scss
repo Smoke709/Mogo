@@ -1,0 +1,30 @@
+.facts-section{
+    background: $blue-color;
+    .facts-container{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        color: $color-white;
+        font-family: 'Montserrat', sans-serif;
+        @include breakpoint(small){
+            flex-direction: column;
+        }
+
+
+        .counter-box{
+            text-align: center;
+
+            p{
+                font-size: 14px;
+            }
+        }
+        .counter{
+            font-size: 72px;
+            font-weight: bold;
+            display: block;
+            padding-bottom: 30px;
+            @include breakpoint(small){
+                padding-bottom: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.crew-section {
+    .crew-sec-container {
+        padding-top: 100px;
+        padding-bottom: 120px;
+        @include breakpoint (small){
+            padding-top: 40px;
+            padding-bottom: 10px;
+        }
+
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .section-title {
+
+            h3 {
+                @include first-heading;
+            }
+
+            h2 {
+                @include second-heading;
+            }
+
+            .crew-line {
+                background: $secondary-color;
+            }
+
+        }
+
+        .paras {
+            margin-bottom: 79px;
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                color: rgb(153, 153, 153);
+            }
+        }
+
+        .image-cont{
+            overflow: hidden;
+        }
+
+        .column {
+            float: left;
+            width: calc(33.33% - 30px);
+            margin: 0 15px;
+            @include breakpoint (small){
+                width: 100%;
+                float: none;
+                margin: 40px auto;
+            }
+        }
+
+        .coll-1 {
+            float: none;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .teaser-icon {
+            height: 56px;
+            width: 56px;
+            background: $primary-color;
+            color: $secondary-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid inherit;
+            font-size: 15px;
+            transition: all 0.5s;
+            
+            &:last-child{
+                border-right: none;
+            }
+            &:hover{
+                background-color: $secondary-color;
+                color: $color-white;
+            }
+        }
+
+        .coll-2 {
+            p {
+                margin-bottom: 0;
+
+                &:first-child {
+                    text-transform: uppercase;
+                    margin-bottom: 16px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: 'Montserrat', sans-serif;
+                }
+
+                &:last-child {
+                    font-size: 15px;
+                    font-family: 'Roboto', sans-serif;
+                    color: rgb(153, 153, 153);
+                    font-style: italic;
+
+
+                }
+            }
+        }
+    }
+}

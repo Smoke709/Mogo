@@ -1,0 +1,79 @@
+.service-section {
+    .service-section-container {
+        padding-top: 112px;
+        padding-bottom: 75px;
+        @include breakpoint (small){
+            padding-top: 40px;
+            padding-bottom: 60px;
+        }
+
+        .service-container-wrapper {
+            overflow: hidden;
+        }
+
+        .section-title {
+            h3 {
+                @include first-heading;
+            }
+
+            h2 {
+                @include second-heading;
+            }
+
+            .service-line {
+                background: $secondary-color;
+                margin-bottom: 16px;
+            }
+
+        }
+
+        .col-wrapper {
+            overflow: hidden;
+            margin-bottom: -2px;
+        }
+
+        .col-item {
+            float: left;
+            width: 33.333%;
+            border-bottom: 1px solid $border-color;
+            padding: 50px 39px 50px 30px;
+            @include breakpoint(small){
+                width: 50%;
+            }
+            @include breakpoint (smaller){
+                width: 100%;
+                padding: 20px 30px 20px 30px;
+            }
+        }
+
+        .service-icon {
+            width: 32px;
+            height: 31px;
+            float: left;
+            margin-right: 27px;
+            img {
+                height: 100%;
+            }
+        }
+
+        .col-item-cont {
+            overflow: hidden;
+
+            h3 {
+                margin-bottom: 21px;
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+
+            p {
+                line-height: 1.5;
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+                color: $color-grey;
+            }
+
+        }
+    
+    }
+}

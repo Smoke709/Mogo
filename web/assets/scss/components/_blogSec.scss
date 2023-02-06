@@ -1,0 +1,179 @@
+.blog-section{
+    .blog-section-container{
+        padding-top: 112px;
+        padding-bottom: 117px;
+        @include breakpoint (small){
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .section-title {
+            h3 {
+                @include first-heading;
+            }
+
+            h2 {
+                @include second-heading;
+            }
+
+            .line {
+                background: $secondary-color;
+                margin-bottom: 47px;
+            }
+        }
+        .row{
+            @include breakpoint (wide){
+                flex-direction: column;
+                align-items: center;
+            }
+            &::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .col-lg-4{
+                width: 380px;
+                padding: 0 8px;
+                @include breakpoint (wide){
+                    margin-bottom: 40px;
+                }
+
+                &:first-child{
+                    padding-left: 0;
+                }
+                &:last-child{
+                    padding-right: 0;
+                    @include breakpoint (wide){
+                        margin-bottom: 0;
+                    }
+                }
+
+                &::after{
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+            }
+
+            .first-col{
+                border-bottom: 1px solid rgb(229, 229, 229);
+                padding-bottom: 23px;
+                margin-bottom: 20px;
+            }
+            .blog-img{
+                height: 240px;
+              
+
+                .calendar{
+                    height: 70px;
+                    width: 60px;
+                    padding: 15px 16px 16px 15px;
+                    background: $blue-color;
+                    text-align: center;
+                    margin-left: -386px;
+                    margin-top: 160px;
+                    color: $color-white;
+
+                    p{
+                        margin-bottom: 0;
+
+                        &:first-child{
+                            font-weight: 700;
+                            font-size: 15px;
+                        }
+
+                        &:last-child{
+                            font-style: italic;
+                        }
+                    }
+                }
+
+                .calen-2{
+                    margin-left: -378px;
+                }
+
+                img{
+                    height: 100%;
+                }
+            }
+            .blog-text{
+                p{
+                    &:first-child{
+                        margin: 20px 0;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                    }
+                    &:last-child{
+                        font-family: 'Roboto', sans-serif;
+                        color: rgb(153, 153, 153);
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .view{
+                float: left;
+                height: 12px;
+                width: 50px;
+                margin-right: 19px;
+                &::after{
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+                a{
+                    display: block;
+                    width: 20px;
+                    height: 11px;
+
+                    &:first-child{
+                        float: left;
+                        margin-right: 7px;
+                    }
+
+                    &:last-child{
+                        float: left;
+                        width: calc(100% - 27px);
+                        text-decoration: none;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 15px;
+                        color: rgb(185, 185, 185);
+                    }
+
+                    img{
+                        height: 100%;
+                        vertical-align: unset;
+                    }
+                }
+                
+            }
+            .comment{
+                float: left;
+                width: calc(100% - 69px);
+                a{
+                    display: block;
+                    height: 15px;
+                    width: 16px;
+                    &:first-child{
+                        float: left;
+                        margin-right: 6px;
+                    }
+
+                    &:last-child{
+                        float: left;
+                        width: calc(100% - 26px);
+                        text-decoration: none;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 15px;
+                        color: rgb(185, 185, 185);
+                    }
+                }
+                img{
+                    height: 100%;
+                        vertical-align: initial;
+                }
+            }
+        }
+    }
+}

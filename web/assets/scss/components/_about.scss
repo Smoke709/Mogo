@@ -1,0 +1,125 @@
+.paras {
+    max-width: 952px;
+    margin: 0 auto;
+}
+
+.about-section {
+
+    .about-container {
+        padding-top: 95px;
+        padding-bottom: 110px;
+        @include breakpoint(small){
+            padding: 60px 0;
+        }
+
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+
+    .about-contents {
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        h3 {
+            @include first-heading;
+        }
+
+        h2 {
+            @include second-heading;
+        }
+
+        .about-line {
+            background: $secondary-color;
+            margin-bottom: 47px;
+        }
+
+        .paras {
+            margin-bottom: 104px;
+            @include breakpoint(small){
+                margin-bottom: 60px;
+            }
+
+            p {
+                line-height: 1.5;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+        }
+    }
+
+}
+.image-cont {
+    .col {
+        width: calc(33.33% - 20px);
+        margin: 0 15px;
+        float: left;
+        background: $blue-color;
+        @include breakpoint (small){
+            float: none;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+
+        &:first-child {
+            margin-left: 0px;
+            @include breakpoint (small){
+                margin-left: auto;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0px;
+            @include breakpoint (small){
+                margin-right: auto;
+            }
+        }
+
+    }
+
+    .teaser-with-overlay {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        transition: all 0.5s;
+        cursor: pointer;
+
+        .image-text {
+            position: absolute;
+            top: 0;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-white;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            transition: all 0.5s;
+        }
+
+        &:hover {
+            transform: translate(-10px, -10px);
+        }
+
+        &:hover .image-text {
+            top: 0;
+        }
+
+
+
+    }
+
+}

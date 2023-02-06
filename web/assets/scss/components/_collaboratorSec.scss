@@ -1,0 +1,70 @@
+.collaborators-section {
+    background: $qoutes-sec-bg;
+
+    .collaborators-sec-container {
+        padding-top: 62px;
+        padding-bottom: 62px;
+
+        .row>* {
+            padding: 0;
+        }
+        
+        .col-xl-2{
+            width: 126px;
+            height: 126px;
+            margin: 0 44px;
+            @include breakpoint(medium){
+                margin: 44px;
+            }
+
+
+            &:first-child{
+                margin-left: 0;
+
+                @include breakpoint(medium){
+                    margin-left: 44px;
+                }
+            }
+            &:last-child{
+                margin-right: 0;
+                @include breakpoint(medium){
+                    margin-right: 44px;
+                }
+            }
+        }
+        // .collab-logo1 {
+        //     width: 108px;
+        //     height: 108px;
+        //     margin-right: 117px;
+        // }
+
+        // .collab-logo2 {
+        //     width: 89px;
+        //     height: 91px;
+        //     margin-right: 98px;
+        // }
+
+        // .collab-logo3 {
+        //     width: 126px;
+        //     height: 126px;
+        //     margin-right: 99px;
+        // }
+
+        // .collab-logo4 {
+        //     width: 119px;
+        //     height: 95px;
+        //     margin-right: 91px;
+        // }
+
+        // .collab-logo5 {
+        //     width: 114px;
+        //     height: 116px;
+        //     margin-right: 108px;
+        // }
+
+        // .collab-logo6 {
+        //     width: 110px;
+        //     height: 115px;
+        // }
+    }
+}

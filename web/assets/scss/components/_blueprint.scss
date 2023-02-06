@@ -1,0 +1,64 @@
+.blueprint-section {
+    background: url('/web/assets/images/Layer-45_03.png') no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $blueprint-overlay;
+        opacity: 0.8;
+    }
+
+    .blueprint-section-container {
+        padding-top: 112px;
+        position: relative;
+        z-index: 1;
+        @include breakpoint (small){
+            padding-top: 40px;
+        }
+
+        .section-title {
+            h3 {
+                @include first-heading;
+            }
+
+            h2 {
+                @include second-heading;
+            }
+
+            .blueprint-line {
+                background-color: $secondary-color;
+                margin-bottom: 45px;
+            }
+        }
+
+    }
+
+    .design-demo {
+        position: relative;
+
+        .ipad-blueprint {
+            position: relative;
+            max-width: 475px;
+            width: 100%;
+            height: 578px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .iphone-blueprint {
+            position: absolute;
+            top: 35%;
+            right: 20%;
+            width: 200px;
+            height: 430px;
+            margin: auto;
+        }
+    }
+
+}

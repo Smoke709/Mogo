@@ -1,0 +1,53 @@
+.map-section{
+    background: url('/web/assets/images/mapimg.jpg') no-repeat;
+    background-position: inherit;
+    background-size: cover;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $blueprint-overlay;
+        opacity: 0.8;
+    }
+
+    .map-section-container{
+        position: relative;
+        padding-top: 57px;
+        padding-bottom: 57px;
+        text-align: center;
+
+        .fa-map-marker{
+            color: $secondary-color;
+            margin-bottom: 18px;
+            font-size: 24px;
+        }
+
+        h3{
+            @include first-heading;
+            margin-bottom: 22px;
+
+            a{
+                text-decoration: none;
+                color: $secondary-color;
+                font-style: normal;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+
+            }
+        }
+
+        .line{
+            background: $secondary-color;
+            margin-bottom: 0;
+        }
+
+        a:hover{
+            color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.qoutes-section {
+
+    background: $qoutes-sec-bg;
+
+    .qoutes-section-container {
+        position: relative;
+        padding: 70px 23px;
+
+        .slick-slider {
+            margin-bottom: 0px;
+        }
+
+        .fa {
+            position: absolute;
+            top: 35%;
+            color: $slick-arrow-color;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev {
+            left: 0;
+            z-index: 1;
+        }
+    }
+}
+
+.icon-cont {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 62px;
+    @include breakpoint (wide){
+        float: none;
+        margin-right: auto;
+        margin: auto;
+    }
+}
+
+.inner {
+    max-width: 980px;
+    margin: 0 auto;
+    display: block !important;
+}
+
+.paras-cont {
+    overflow: hidden;
+    @include breakpoint (wide){
+        padding: 15px 30px;
+    }
+
+    blockquote {
+        color: rgb(177, 177, 177);
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        margin-bottom: 8px;
+    }
+
+    figcaption {
+        @include first-heading;
+        margin-bottom: 0;
+    }
+
+    .line {
+        background: $secondary-color;
+        margin: 0;
+        margin-right: 10px;
+    }
+}

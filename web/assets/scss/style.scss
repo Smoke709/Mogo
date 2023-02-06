@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&family=Roboto&display=swap');
+@import 'variables';
+@import 'utility';
+@import 'mixin';
+@import 'components/header';
+@import 'components/banner';
+@import 'components/about';
+@import 'components/facts';
+@import 'components/service';
+@import 'components/blueprint';
+@import 'components/activity';
+@import 'components/qoutes';
+@import 'components/crewSec';
+@import 'components/collaboratorSec';
+@import 'components/workSec';
+@import 'components/clientSec';
+@import 'components/blogSec';
+@import 'components/reviewSec';
+@import 'components/mapSec';
+@import 'components/footer';
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}

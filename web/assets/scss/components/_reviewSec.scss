@@ -1,0 +1,46 @@
+.review-section{
+    .review-section-container{
+        padding-top: 100px;
+        padding-bottom: 130px;
+        @include breakpoint (small){
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        .slider{
+            margin-bottom: 0px;
+            .inner{
+                display: flex !important;
+                @include breakpoint (wide){
+                    flex-direction: column;
+                }
+            }
+            .icon-cont{
+                width: 210px;
+                height: 210px;
+
+                img{
+                    width: 210px;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .fa {
+            position: absolute;
+            top: 35%;
+            color: $slick-arrow-color;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev {
+            left: 0;
+            z-index: 1;
+        }
+    }
+}
